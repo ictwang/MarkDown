@@ -78,6 +78,7 @@ public class WordUtilImpl implements WordUtil {
 
         for(int i=1; i<length; i++){
             String docUrl = srcDocxs[i];
+            //被合并文档的内容默认从新的一页开始显示
             doc.insertTextFromFile(docUrl, FileFormat.Docx);
         }
 
